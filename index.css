@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* CSS RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES */
+
+:root {
+  /* COLORS */
+
+  --GREEN: hsl(75, 94%, 57%);
+  --WHITE: hsl(0, 0%, 100%);
+  --GREY-LIGHT: hsl(0, 0%, 20%);
+  --GREY-MEDIUM: hsl(0, 0%, 12%);
+  --GREY-DARK: hsl(0, 0%, 8%);
+
+  /* FONT STYLES */
+
+  --FONT-REGULAR: 400;
+  --FONT-BOLD: 600;
+  --FONT-BOLDER: 700;
+}
+
+/* GENERAL STYLES */
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: var(--WHITE);
+  background-color: var(--GREY-DARK);
+  margin: 3rem auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height:100vh;
+}
+
+.container {
+  background-color: var(--GREY-MEDIUM);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  border-radius: 10px;
+  max-width: 90%;
+  width:400px;
+  height: auto;
+}
+
+a{
+    min-width:100%;
+}
+
+button {
+  font: inherit;
+  font-weight: var(--FONT-BOLD);
+  color: var(--WHITE);
+  background-color: var(--GREY-LIGHT);
+  margin: 0.5rem 0;
+  padding: 0.75rem;
+  min-width: 100%;
+  border: none;
+  border-radius: 7px;
+}
+
+button:hover,
+button:focus {
+  background-color: var(--GREEN);
+  cursor: pointer ;
+  transform: translateY(2px);
+  transition: all 0.3s ease-in-out;
+}
+
+button:not(:hover){
+    background-color:var(--GREY-LIGHT);
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
+}
+
+img{
+    margin:0.5rem;
+    padding:0.5rem;
+    width:6rem;
+    height:6rem;
+    border-radius:50%;
+}
+
+h2{
+    margin:0.25rem;
+    padding:0.25rem;
+    font-weight:var(--FONT-BOLD);
+}
+
+.residence{
+    color:var(--GREEN);
+    font-weight:var(--FONT-BOLDER);
+    font-size:0.8rem;
+    margin-bottom:0.5rem;
+}
+
+.description{
+    font-size:0.8rem;
+    margin:0.5rem;
+    padding:0.5rem;
+}
+
+
+/* MEDIA QUERIES */
+
+/* SMALL DEVICES */
+@media (min-width:450px) and (max-width:768px){
+    .container{
+       min-width:380px;
+    }
+
+}
+
+/* MEDIUM DEVICES */
+@media (min-width:769px) and (max-width:1024px){
+    .container{
+        min-width:400px;
+    }
+}
+
+/* LARGE DEVICES */
+@media (min-width:1025px){
+    .container{
+        min-width:420px;
+    }
+}
