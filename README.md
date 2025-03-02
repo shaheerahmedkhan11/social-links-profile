@@ -14,7 +14,6 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 - [Author](#author)
 
 
-##Overview
 
 ### The challenge
 
